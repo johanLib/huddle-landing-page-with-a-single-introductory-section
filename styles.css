@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+
+  --fw-1: 400;
+  --fw-2: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-height: 1040px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    height: 800px;
+    padding: 3.3rem 4.38rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container_hero {
+    width: 55%;
+    transition: all .35s linear;
+}
+
+.container_hero_logo {
+    width: 215px;
+    margin-bottom: 5rem;
+}
+
+.container_hero_image {
+    width: 99.2%;
+    margin-top: .1rem;
+    margin-left: .2rem;
+    transition: all .35s linear;
+}
+
+.content {
+    width: 41.2%;
+    margin-top: .88rem;
+    padding-right: 1rem;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.48rem;
+    transition: all .35s linear;
+}
+
+.para {
+    margin: 1.2rem 0 1.6rem 0;
+    font-weight: 400;
+    font-size: 1.06rem;
+    letter-spacing: 0.05rem;
+    line-height: 27px;
+    transition: all .35s linear;
+}
+
+.register {
+    width: 200px;
+    height: 55px;
+    border: none;
+    border-radius: 55px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all .25s linear;
+}
+
+.register:hover {
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.social-media-icons {
+    width: 100%;
+    margin: 1rem .6rem 0 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fab {
+    width: 40px;
+    height: 40px;
+    margin-left: 1rem;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color: white;
+    font-size: 1.1rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .25s linear;
+}
+
+.fab:last-of-type {
+    font-size: 1.24rem;
+}
+
+.fab:hover {
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .wrapper {
+        width: 100%;
+        height: auto;
+        min-height: 1040px;
+        align-items: flex-start;
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+    }
+
+    .container {
+        width: 90%;
+        height: auto;
+        max-width: 550px;
+        padding: 4rem .2rem;
+    }
+
+    .container_hero {
+        width: 100%;
+    }
+
+    .container_hero_logo {
+        width: auto;
+        height: 40px;
+    }
+
+    .container_hero_image {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 3rem;
+    }
+
+    .content {
+        width: 100%;
+        padding: 0 .2rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.6rem;
+    }
+
+    .para {
+        margin: 1.5rem 0 0 0;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 28px;
+    }
+
+    .social-media-icons {
+        width: 150px;
+        margin: 0 auto;
+        justify-content: space-between;
+
+    }
+
+    .register {
+        width: 70%;
+        height: 50px;
+        margin: 2rem 0 6rem 0;
+    }
+
+    .fab {
+        width: 40px;
+        height: 40px;
+        margin: 0;
+    }
+
+}
